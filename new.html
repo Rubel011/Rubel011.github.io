@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+    <style>
+        /* Default styles */
+#nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#nav-menu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#nav-menu li {
+  margin: 0 10px;
+}
+
+#nav-menu a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  #nav-menu {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #nav-menu li {
+    margin: 10px 0;
+  }
+
+  #nav-menu a {
+    font-size: 14px;
+  }
+}
+    </style>
+
+</head>
+<body>
+	<nav id="nav-menu">
+		<ul>
+			<li><a href="#home" class="nav-link home">Home</a></li>
+			<li><a href="#about" class="nav-link about">About</a></li>
+			<li><a href="#skills" class="nav-link skills">Skills</a></li>
+			<li><a href="#projects" class="nav-link projects">Projects</a></li>
+			<li><a href="#contact" class="nav-link contact">Contact</a></li>
+			<li><a href="path/to/resume.pdf" class="nav-link resume" target="_blank">Resume</a></li>
+		</ul>
+	</nav>
+
+	<section id="home">
+		<img src="path/to/professional-photo.jpg" class="home-img" alt="My professional photo">
+	</section>
+
+	<section id="about" class="about section">
+		<h2>About me</h2>
+		<p id="user-detail-intro">Formal introduction</p>
+		<p id="user-detail-name">Your name</p>
+		<a href="path/to/resume.pdf" id="resume-link-2" target="_blank">Download Resume</a>
+	</section>
+
+	<section id="skills">
+		<h2>Skills</h2>
+		<div class="skills-card">
+			<img src="path/to/skills-image.jpg" class="skills-card-img" alt="Skills image">
+			<p class="skills-card-name">Skill name</p>
+		</div>
+	</section>
+
+	<section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-card">
+          <img src="project-image.jpg" alt="Project Image">
+          <div class="project-details">
+            <h3 class="project-title">Project Title</h3>
+            <p class="project-description">Project Description</p>
+            <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
+            <a href="https://github.com/user/repo" target="_blank" class="project-github-link">GitHub Repository</a>
+            <a href="https://project-demo.com" target="_blank" class="project-deployed-link">Demo Link</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="project-image.jpg" alt="Project Image">
+          <div class="project-details">
+            <h3 class="project-title">Project Title</h3>
+            <p class="project-description">Project Description</p>
+            <p class="project-tech-stack">Tech Stack: HTML, CSS, JavaScript</p>
+            <a href="https://github.com/user/repo" target="_blank" class="project-github-link">GitHub Repository</a>
+            <a href="https://project-demo.com" target="_blank" class="project-deployed-link">Demo Link</a>
+          </div>
+        </div>
+      </section>
+
+        
+      </body>
+      </html>
