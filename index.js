@@ -48,7 +48,7 @@ window.open("https://drive.google.com/file/d/1NB33EV8fyFEyqE2YpketzAROuZfDS_WH/v
   }
 
   document.getElementById("resume-button-2").onclick=()=>{
-    window.open("https://drive.google.com/file/d/1NB33EV8fyFEyqE2YpketzAROuZfDS_WH/view?usp=sharing");
+   location.assign("https://drive.google.com/file/d/1NB33EV8fyFEyqE2YpketzAROuZfDS_WH/view?usp=sharing");
   }
      
   
