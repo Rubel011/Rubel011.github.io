@@ -43,11 +43,11 @@ function typeWriter() {
     tooltips: true,
   });
 
-  document.getElementById("resume-button-1").onclick=()=>{
+  document.getElementById("resume-link-1").onclick=()=>{
 window.open("https://drive.google.com/file/d/1NB33EV8fyFEyqE2YpketzAROuZfDS_WH/view?usp=sharing");
   }
 
-  document.getElementById("resume-button-2").onclick=()=>{
+  document.getElementById("resume-link-2").onclick=()=>{
     window.open("https://drive.google.com/file/d/1NB33EV8fyFEyqE2YpketzAROuZfDS_WH/view?usp=sharing");
   }
      
