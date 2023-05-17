@@ -80,12 +80,13 @@ align-items: center;
 
 #home>img{
   width: 350px;
-  margin: 0% 7%;
+  margin: 3% 7% 7% 7%;
   border-radius: 5%;
   transition:transform .6s;
 top: 30%;
 left: 50%;
-
+box-shadow: 10px 10px 30px rgb(94, 243, 126);
+border: 1px solid #1DE9B6;
 }
 
 #home>img:hover{
