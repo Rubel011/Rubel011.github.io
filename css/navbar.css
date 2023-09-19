@@ -1,0 +1,111 @@
+:root {
+  --navbar-background-color: #e5f5ff;
+  --navbar-item-hover-border: #915eff;
+  --navbar-text-color: #777880;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--navbar-text-color);
+}
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0px 40px;
+  z-index: 1;
+
+  /* background-color:var(--navbar-background-color) ; */
+  backdrop-filter: blur(14px);
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.navbar-logo {
+  font-size: 2rem;
+  display: flex;
+}
+.navbar-logo-image{
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+}
+.nav-item {
+  border: 1px solid var(--navbar-item-hover-border);
+  padding: 6px;
+  border-radius: 5px;
+}
+.nav-link {
+  color: var(--navbar-text-color);
+  transition: 0.7s ease;
+}
+.nav-item:hover {
+  background-color: var(--navbar-background-color);
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--navbar-text-color);
+}
+@media (max-width: 797px) {
+  .hamburger {
+    display: block;
+    
+  }
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .navbar-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(198, 208, 215, 0.66);
+    backdrop-filter: blur(24px);
+    /* opacity: .2; */
+    text-align: center;
+    width: 100%;
+    transition: 0.7s ease-in-out;
+  }
+  .nav-item {
+    border: 1px solid var(--navbar-item-hover-border);
+    padding: 6px 140px;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  .nav-link {
+    color: var(--navbar-text-color);
+    transition: 0.7s ease;
+  }
+  .navbar-menu.active {
+    left: 0;
+  }
+}
