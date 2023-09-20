@@ -416,10 +416,10 @@ img.man-icons {
 .project-subtitle {
   /* margin: auto 2rem 1rem; */
   margin-bottom: var(--mb-4);
-  font-size:small;
+  font-size: small;
   /* height: 20%; */
 }
-.project-tech-stack{
+.project-tech-stack {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -600,8 +600,15 @@ img.man-icons {
   .home {
     grid-template-columns: repeat(1, 1fr);
   }
+  .project-container{
+    grid-template-columns: repeat(1,1fr);
+  }
 }
-
+@media all and (min-width: 701px) and (max-width: 985px){
+  .project-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
 @media all and (min-width: 530px) and (max-width: 578px) {
   .home-img {
     top: 375px;
@@ -619,9 +626,16 @@ img.man-icons {
   .home {
     row-gap: 2rem;
   }
-  #about {
-    margin-top: 180px;
+  #home {
+    margin-bottom: 40px;
   }
+  .section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left:20px;
+    padding-right: 30px
+  }
+
   .mainskills {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
@@ -643,6 +657,9 @@ img.man-icons {
   .home {
     margin: 0px;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .project-container{
+    grid-template-columns: repeat(1,1fr);
   }
 }
 
@@ -690,6 +707,7 @@ img.man-icons {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
   }
+
 }
 
 @media screen and (min-width: 768px) {

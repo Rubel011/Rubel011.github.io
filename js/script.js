@@ -10,17 +10,17 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(".home__data, .about__img, .skills__subtitle, .skills__text", {});
-sr.reveal(".home-img, .about__subtitle, .about__text, .skills__img", {
-  delay: 100,
-});
-sr.reveal(".home__social-icon", { interval: 100 });
-sr.reveal(".skills__data, .work__img, .contact__input", { interval: 50 });
+// sr.reveal(".home__data, .about__img, .skills__subtitle, .skills__text", {});
+// sr.reveal(".home-img, .about__subtitle, .about__text, .skills__img", {
+//   delay: 100,
+// });
+// sr.reveal(".home__social-icon", { interval: 100 });
+// sr.reveal(".skills__data, .work__img, .contact__input", { interval: 50 });
 
 /*SCROLL HOME*/
 sr.reveal(".home-title", {});
 // sr.reveal( ".button", { delay: 100 } );
-sr.reveal(".home-img", { delay: 100 });
+sr.reveal(".home-img", { interval: 200 });
 sr.reveal(".home-social-icon", { interval: 100 });
 
 /*SCROLL ABOUT*/
@@ -39,6 +39,8 @@ sr.reveal(".skills-text", {});
 sr.reveal(".skills-data", { interval: 50 });
 sr.reveal(".contact-input", { interval: 100 });
 
+// scroll github section
+sr.reveal("#github-top-langs,#github-stats-card,#github-streak-stats", {interval: 50});
 
 document.querySelector("#resume-button-1").addEventListener("click", () => {
   window.open(
@@ -115,6 +117,11 @@ const non_ai_project_container = document.getElementById("non-ai-project-contain
 non_ai_project_container.innerHTML = make_project_card_using_data(all_non_ai_project)
 const ai_project_container = document.getElementById("ai-project-container")
 ai_project_container.innerHTML = make_project_card_using_data(all_ai_project)
+
+/*SCrool Project section */
+sr.reveal(".project-card", {interval:50});
+sr.reveal(".project-img,.project-title,.project-subtitle,.project-tech-stack,.project-btns", {interval:50});
+
 
 function make_project_card_using_data(project_data) {
   const data = project_data.map((data) => {
