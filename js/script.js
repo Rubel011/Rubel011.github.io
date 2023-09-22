@@ -18,9 +18,10 @@ const sr = ScrollReveal({
 // sr.reveal(".skills__data, .work__img, .contact__input", { interval: 50 });
 
 /*SCROLL HOME*/
-sr.reveal(".home-title", {});
+// sr.reveal(".home-title", {});
 // sr.reveal( ".button", { delay: 100 } );
-sr.reveal(".home-img", { interval: 200 });
+// sr.reveal(".home-img",{interval:100})
+sr.reveal(".home-img,.home__data", { delay: 100 });
 sr.reveal(".home-social-icon", { interval: 100 });
 
 /*SCROLL ABOUT*/
@@ -76,6 +77,14 @@ const all_non_ai_project = [{
   project_description: "Airmeet is a real-time video chat app that allows users to create video chat rooms and communicate with each other in real-time through text, voice and video.",
   project_tech_stack: [{ name: "Html", "color": "#91311c" },{ name: "Css", "color": "#50a2ff" },{ name: "JavaScript", "color": "#e1cd55" },{ name: "Node.js", "color": "#26ac72" },{ name: "Express.js", "color": "#91311c" },{ name: "MongoDb", "color": "#50a2ff" },{ name: "Agora API", "color": "#e1cd55" }],
   project_github: "https://github.com/Rubel011/Air-Meet-Video-Chat-app", project_frontend_url: "https://airmeetup.netlify.app/"
+
+},
+{
+  img_url: "./Assets/images/Projects/Vetspot.jpg",
+  project_title: "Vetspot: veterinary-clinic-website",
+  project_description: "The Veterinary System Website is designed to streamline and optimize the operations of a veterinary clinic. It offers features such as patient management, appointment scheduling, billing and invoicing, inventory management, and reporting and analytics.",
+  project_tech_stack: [{ name: "Html", "color": "#91311c" },{ name: "Css", "color": "#50a2ff" },{ name: "JavaScript", "color": "#e1cd55" },{ name: "Node.js", "color": "#26ac72" },{ name: "Express.js", "color": "#91311c" },{ name: "MongoDb", "color": "#50a2ff" },{ name: "AWS", "color": "#91311c" }],
+  project_github: "https://github.com/Rubel011/Vetspot_veterinary-clinic_website", project_frontend_url: "https://unarmed-science-115.vercel.app/"
 
 },
 {
