@@ -23,16 +23,6 @@
   --project-section-background-color: #0e0f1f;
   --project-card-background-color: #151030;
 }
-
-@media screen and (min-width: 968px) {
-  :root {
-    --big-font-size: 1.8rem;
-    --h2-font-size: 2rem;
-    --normal-font-size: 1rem;
-    --smaller-font-size: 0.875rem;
-  }
-}
-
 *,
 ::before,
 ::after {
@@ -72,17 +62,7 @@ img {
   object-fit: cover;
   display: block;
 }
-
-header {
-  opacity: 90%;
-}
-
 /* <---------------- Default css ----------------> */
-.l-header #nav-menu .logo_sign {
-  font-family: "Gajraj One", cursive;
-  font-family: "Tangerine", cursive;
-  font-size: 36px;
-}
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -117,32 +97,6 @@ header {
   display: grid;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
-}
-
-.l-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
-}
-
-/*Active menu*/
-/* .active::after {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 0.18rem;
-  left: 0;
-  top: 2rem;
-  background-color: var(--first-color);
-} */
-
-/*=== Show menu ===*/
-.show {
-  right: 0;
 }
 
 /* <!--------------------- Home Section ---------------------> */
@@ -250,46 +204,6 @@ header {
 }
 
 /* <!--------------------- Skills Section ---------------------> */
-#mskills {
-  width: 100%;
-  background-color: #fafafa;
-  margin: auto;
-}
-#mskills > h1 {
-  text-align: center;
-  margin-top: 80px;
-}
-.mainskills {
-  width: 40%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 5%;
-  margin: auto;
-}
-.mainskills > div {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  display: grid;
-  align-items: center;
-  padding: 15px 15px;
-  border-radius: 5px;
-  margin-top: 50px;
-  background-color: #f5fffa;
-}
-.mainskills > div:hover {
-  background-color: white;
-}
-.mainskills > div > img {
-  width: 50%;
-  margin: auto;
-}
-.mainskills > div > h3 {
-  text-align: center;
-  margin-top: 7px;
-}
-
-/* -------------- */
-
 .skills-container {
   row-gap: 2rem;
   text-align: center;
@@ -318,55 +232,10 @@ header {
   margin-right: var(--mb-2);
   color: var(--first-color);
 }
-img.man-icons {
-  font-size: 2rem;
-  margin-right: var(--mb-2);
-  color: var(--first-color);
-}
 .skills-card {
   display: flex;
   align-items: center;
 }
-.skills-bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  height: 0.25rem;
-  border-radius: 0.5rem;
-  z-index: var(--z-back);
-}
-.skills-html {
-  width: 75%;
-}
-.skills-css {
-  width: 70%;
-}
-.skills-js {
-  width: 85%;
-}
-.skills-react,
-.skills-mongo {
-  width: 80%;
-}
-.skills-redux {
-  width: 90%;
-}
-.skills-mui,
-.skills-sql {
-  width: 65%;
-}
-.skills-ts {
-  width: 70%;
-}
-.skills-express,
-.skills-node {
-  width: 85%;
-}
-.skills-img {
-  border-radius: 0.5rem;
-}
-
 /* <!--------------------- Project Section ---------------------> */
 .projects {
   background-color: var(--project-section-background-color);
@@ -773,13 +642,6 @@ img.man-icons {
   }
   .home-img > img {
     margin-left: 100px;
-  }
-  .mainskills {
-    width: 50%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 5%;
-    margin: auto;
   }
   .skills-container {
     grid-template-columns: repeat(3, 1fr);

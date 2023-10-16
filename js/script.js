@@ -128,8 +128,8 @@ const ai_project_container = document.getElementById("ai-project-container")
 ai_project_container.innerHTML = make_project_card_using_data(all_ai_project)
 
 /*SCrool Project section */
-sr.reveal(".project-card", {interval:50});
-sr.reveal(".project-img,.project-title,.project-subtitle,.project-tech-stack,.project-btns", {interval:50});
+// sr.reveal(".project-card", {interval:50});
+// sr.reveal(".project-img,.project-title,.project-subtitle,.project-tech-stack,.project-btns", {interval:50});
 
 
 function make_project_card_using_data(project_data) {
